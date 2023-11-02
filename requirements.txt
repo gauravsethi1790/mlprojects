@@ -3,4 +3,8 @@ numpy
 seaborn
 matplotlib
 dill
+dataclasses
+scikit-learn
+
+
 -e .

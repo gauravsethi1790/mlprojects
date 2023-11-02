@@ -9,13 +9,15 @@ def get_requirements(file_path:str)->List[str]:
     # ...
     # this func will return the list of requirements
     # ...
-    requirement = []
+    requirements = []
     with open(file_path) as file_obj:
-        requirement=file_obj.readlines()
-        requirements= [req.replace("\n","") for req in requirement]
+        requirements=file_obj.readlines()
+        requirements= [req.replace("\n","") for req in requirements]
 
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
+
+    return requirements
             
 
 
